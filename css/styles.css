@@ -219,7 +219,6 @@ a {
   margin-right: 0;
 }
 
-
 .quality__paragraph {
   line-height: 1.71;
   color: var(--main-text-color);
@@ -346,7 +345,7 @@ header {
   border-radius: 4px;
   padding: 16px 32px; */
 }
-.client--link {
+.client__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -361,7 +360,7 @@ header {
   margin-right: 30px;
 }
 
-.client-logo {
+.client__logo {
   width: 105px;
   height: 60px;
   color: inherit;
@@ -369,13 +368,13 @@ header {
   transition: fill 250ms var(--cubic-timing);
 }
 
-.client--link:hover .client-logo,
-.client--link:focus .client-logo {
+.client__link:hover .client__logo,
+.client__link:focus .client__logo {
   fill: var(--blue-color);
 }
 
-.client--link:hover,
-.client--link:focus {
+.client__link:hover,
+.client__link:focus {
   outline: none;
   border-color: var(--blue-color);
 }
@@ -404,7 +403,7 @@ header {
   margin-right: 30px;
 }
 
-.section-title {
+.quality__title {
   font-size: 14px;
   line-height: 1.19;
   color: var(--primary-text-color);
