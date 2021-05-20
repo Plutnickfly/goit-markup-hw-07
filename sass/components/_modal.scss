@@ -136,6 +136,26 @@
   align-items: flex-end;
 }
 
+.contact__form--svg {
+  fill: currentColor;
+  transition: fill 250ms var(--cubic-timing);
+  .contact__form--input:focus + & {
+    fill: var(--blue-color);
+  }
+}
+
+.contact__form--label {
+  color: currentColor;
+  transition: color 250ms var(--cubic-timing);
+
+  .contact__form:focus-within & {
+    color: var(--blue-color);
+  }
+  .submit__form:focus-within & {
+    color: var(--blue-color);
+  }
+}
+
 .contact__form--checkbox:focus + .contact__form--checkbox-text::before {
   box-shadow: 0px 0px 0px 2px var(--blue-color);
 }
@@ -148,8 +168,3 @@
   background-color: var(--blue-color);
   border-color: var(--blue-color);
 }
-
-// .contact__form:focus {
-//   color: var(--blue-color);
-//   fill: blue;
-// }
